@@ -9,11 +9,14 @@ import CarDetailsPage from './pages/CarDetailsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import WishlistPage from './pages/WishlistPage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <ErrorBoundary>
+      
       <Router>
+      <ScrollToTop />
         <div className="min-h-screen flex flex-col bg-light-grey">
           <Header />
           <main className="flex-1">
